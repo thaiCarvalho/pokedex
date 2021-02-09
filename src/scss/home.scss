@@ -1,7 +1,47 @@
 .App {
   max-width: 414px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 40px;
   background-image: url('../images/Pokeball.png');
   background-repeat: no-repeat;
+  background-position: center top;
+
+  &-header {
+    &--filters {
+      padding-top: 42px;
+      display: flex;
+      justify-content: flex-end;
+      img {
+        margin-left: 25px;
+      }
+    }
+    h2 {
+      font-size: 32px;
+      margin: 35px 0 10px;
+    }
+    p {
+      color: #747476;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  &-search {
+    position: relative;
+
+    &--icon {
+      position: absolute;
+      left: 25px;
+      top: 23px;
+    }
+    &--input {
+      background-color: #F2F2F2;
+      border: 0;
+      border-radius: 10px;
+      height: 60px;
+      color: #747476;
+      width: 100%;
+      padding: 0 44px 0 55px;
+    }
+  }
 }

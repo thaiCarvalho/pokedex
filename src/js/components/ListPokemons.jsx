@@ -1,7 +1,11 @@
-const ListPokemons = () => {
+import React from "react";
+
+const ListPokemons = ({pokemon}) => {
+  console.log(pokemon, 'list');
+  console.log(pokemon.name, 'name');
   return (
     <div>
-      lista todos
+      {pokemon.name}
     </div>
   )
 }
